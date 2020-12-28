@@ -1,0 +1,14 @@
+package wsmed;
+
+import javax.xml.ws.Endpoint;
+
+public class ServerJaxWS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       String url= "http://localhost:8686";
+       Endpoint.publish(url, new BanqueService());
+       System.out.println("Web Service deploye sur : "+url);
+	}
+
+}
