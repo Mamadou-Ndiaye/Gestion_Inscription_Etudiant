@@ -14,6 +14,7 @@ public class Etudiant {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     Long id;
+    @Column(unique = true, length=50)
     String numeroEtudiant;
     String prenom;
     String nom;
